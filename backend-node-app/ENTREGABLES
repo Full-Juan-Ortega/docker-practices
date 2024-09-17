@@ -8,7 +8,7 @@ Buildear :
  docker build -t backend-node-app .
  docker run -dti -p 3001:3001 juanortegait/backend-node-app:latest
 Subir a docker hub: 
- docker login.
- docker image tag backend-node-app juanortegait/backend-node-app:latest.
-#Para pushear me pedia asignarle un nombre a la imagen.
+ docker login
+ docker image tag backend-node-app juanortegait/backend-node-app:latest
+#Para pushear me pedia asignarle un nombre a la imagen
  docker push juanortegait/backend-node-app:latest.
