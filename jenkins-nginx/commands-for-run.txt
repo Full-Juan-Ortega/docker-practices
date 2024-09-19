@@ -1,0 +1,4 @@
+docker compose build
+docker compose up -d
+docker exec nginx curl 172.20.0.3:8080
+docker inspect $(docker ps -q) | grep -i ipaddress
